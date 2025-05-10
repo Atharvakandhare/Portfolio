@@ -1,0 +1,139 @@
+:root {
+  --background: #1A2B3C;
+  --text: #E0E0E0;
+  --primary: #E0E0E0;
+  --accent: #4ECDC4;
+  --secondary: #45B7AF;
+  --white: #FFFFFF;
+  --navbar-gradient-start: #1A2B3C;
+  --navbar-gradient-end: #2A3B4C;
+  --card-bg: rgba(30, 55, 90, 0.85);
+  --card-hover: rgba(35, 60, 95, 0.9);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  background-image: linear-gradient(135deg, var(--background) 0%, #2A3B4C 100%);
+}
+
+.app {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(135deg, var(--navbar-gradient-start), var(--navbar-gradient-end));
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 15px rgba(100, 255, 218, 0.15);
+  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  color: var(--text);
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(224, 224, 224, 0.3);
+  background: linear-gradient(to right, var(--text), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-link {
+  color: var(--text);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.social-link:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+  text-shadow: 0 4px 8px rgba(78, 205, 196, 0.3);
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 6rem auto 0;
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Card Styles */
+.card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(100, 255, 218, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  border: 1px solid var(--accent);
+  backdrop-filter: blur(5px);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(100, 255, 218, 0.2);
+  background: var(--card-hover);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+
+  .social-link {
+    font-size: 1.2rem;
+  }
+
+  .main-content {
+    margin-top: 5rem;
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
