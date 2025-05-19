@@ -6,6 +6,14 @@ h2 {
   text-shadow: 0 0 10px rgba(224, 224, 224, 0.3);
 }
 
+/* Container styles for better centering */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 /* About Section */
 .about-content {
   line-height: 1.6;
@@ -215,6 +223,24 @@ h2 {
   color: var(--text);
 }
 
+.email-link {
+  font-size: 1.2rem;
+  color: var(--text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.email-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
+}
+
 /* Header Section */
 .header-section {
   padding: 2rem;
@@ -293,17 +319,26 @@ h2 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
   .skills-container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
   }
 
   .skills-grid {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    width: 100%;
   }
 
   .skill-category-card {
     padding: 1.25rem;
+    width: 100%;
   }
 
   .skill-category-card h3 {
@@ -318,6 +353,19 @@ h2 {
 
   .projects-grid {
     grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .info-item {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 2rem;
   }
 
   .info-item h3 {
@@ -335,6 +383,9 @@ h2 {
 
   .about-content {
     padding: 0.5rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
   }
   
   .about-content p {
@@ -346,11 +397,15 @@ h2 {
     text-align: center;
     gap: 2rem;
     padding: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
   }
 
   .header-image-container {
     width: 200px;
     height: 200px;
+    margin: 0 auto;
   }
 
   .header-name {
@@ -363,5 +418,17 @@ h2 {
 
   .header-description {
     font-size: 1rem;
+    width: 100%;
+  }
+
+  .contact-content {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .contact-info {
+    width: 100%;
   }
 } 
