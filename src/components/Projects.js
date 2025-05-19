@@ -6,7 +6,7 @@ const Projects = () => {
       title: "BioNexa Website",
       description: "BioNexa transforms the way patients and doctors connect, making healthcare more accessible and efficient. With a secure authentication system, an intuitive interface, and seamless communication between patients and doctors, the platform ensures a hassle-free consultation experience. ",
       technologies: ["React", "Node.js", "MongoDB", "Express"],
-      link: "https://github.com/Atharvakandhare/BioNexa"
+      link: "https://bionexa-gpxq.onrender.com/"
     },
     {
       title: "Online Attendance Tracking System",
@@ -18,7 +18,7 @@ const Projects = () => {
       title: "Colombus College Magazine Website",
       description: "A Responsive Magazine Website for Colombus College to showcase their events, activities, and achievements.",
       technologies: ["React", "Node.js", "MongoDB", "Express"],
-      link: "https://github.com/Atharvakandhare/Colombus-Magazine"
+      link: "https://columbus-f62u.onrender.com/"
     },
     {
       title: "Biscotti Cafe Website",
