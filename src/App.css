@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+  }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -104,7 +104,7 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(100, 255, 218, 0.2);
   background: var(--card-hover);
-}
+  }
 
 /* Responsive Design */
 @media (max-width: 768px) {
